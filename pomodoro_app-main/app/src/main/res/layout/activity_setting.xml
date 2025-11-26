@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFF8F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Focus Time -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Focus Duration (minutes)"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editFocusTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="25"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Break Time -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Break Duration (minutes)"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editBreakTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="5"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Sound Switch -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Alarm Sound?"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <Switch
+            android:id="@+id/switchSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Enable Sound"
+            android:textColor="#444" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Settings"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6347"
+            android:layout_marginTop="32dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>
